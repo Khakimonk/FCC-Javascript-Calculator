@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+.calculator_frame {
+    margin: auto;
+    background-color: lightblue;
+    width: 400px;
+}
+.display {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgrey;
+  }
+.calc_row {
+  display: block;
+}
+.calc_btn {
+  display: inline;
+}
