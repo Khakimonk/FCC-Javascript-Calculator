@@ -3,42 +3,45 @@
     <head>
         <title>Free Code Camp Javavscript Calculator</title>
         <link href="CSS/calc.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header>Javascript Calculator</header>
+        <header><h1>Javascript Calculator</h1></header>
         <div class="calculator_frame">
-            <div class="calc_row">
-                <input class="display">
-            </div>
-            <div class="calc_row">
-                <button class="calc_btn">CE</button>
-                <button class="calc_btn">C</button>
-                <button class="calc_btn">backspace</button>
-                <button class="calc_btn">divide</button>
-            </div>
-            <div class="calc_row">
-              <button class="calc_btn">7</button>
-              <button class="calc_btn">8</button>
-              <button class="calc_btn">9</button>
-              <button class="calc_btn">X</button>
-        </div>
-        <div class="calc_row">
-          <button class="calc_btn">4</button>
-          <button class="calc_btn">5</button>
-          <button class="calc_btn">6</button>
-          <button class="calc_btn">-</button>
-    </div>
-    <div class="calc_row">
-      <button class="calc_btn">1</button>
-      <button class="calc_btn">2</button>
-      <button class="calc_btn">3</button>
-      <button class="calc_btn">+</button>
-</div>
-<div class="calc_row">
-  <button class="calc_btn">.</button>
-  <button class="calc_btn">0</button>
-  <button class="calc_btn">=</button>
-</div>
-        <script src="JS/calc.js"></script>
-    </body>
-</html>
+            <table>
+              <tr>
+                <td colspan="4"><input type="textbox" class="display" id="dis"></div></td>
+              </tr>
+              <tr>
+                <td colspan="2"><button class="calc_btn" style="background-color: orange; width: 110px;" id="clearAll" value="CE">CE</button></td>
+                <td><button class="calc_btn" id="modulo" value="%">%</button></td>
+                <td><button class="calc_btn" id="divide" value="/">/</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc_btn" id="seven" value="7">7</button></td>
+                <td><button class="calc_btn" id="eight" value="8">8</button></td>
+                <td><button class="calc_btn" id="nine" value="9">9</button></td>
+                <td><button class="calc_btn" id="multiply" value="*">x</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc_btn" id="four" value="4">4</button></td>
+                <td><button class="calc_btn" id="five" value="5">5</button></td>
+                <td><button class="calc_btn" id="six" value="6">6</button></td>
+                <td><button class="calc_btn" id="minus" value="-">-</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc_btn" id="one" value="1">1</button></td>
+                <td><button class="calc_btn" id="two" value="2">2</button></td>
+                <td><button class="calc_btn" id="three" value="3">3</button></td>
+                <td><button class="calc_btn" id="plus" value="+">+</button></td>
+              </tr>
+              <tr>
+                <td><button class="calc_btn" id="period" value=".">.</button></td>
+                <td><button class="calc_btn" id="zero" value="0">0</button></td>
+                <td colspan="2"><button class="calc_btn" style="background-color: blue; color: white; width: 110px;" id="equals" value="=">=</button></td>
+              </tr>
+            </table>
+            <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+            <script src="JS/calc.js"></script>
+        </body>
+    </html>
